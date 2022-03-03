@@ -12,10 +12,10 @@ You may fiddle with local.conf file however you wish, or add extra layers to be 
 Trial and error!
 
 ## Image specifications
-*YOCTO RELEASE: Thud (2018)
-*MACHINE: qemux86-64
-*IMAGE SIZE: 5GB (can be manually configured)
-*KERNEL: 4.18.33
+* YOCTO RELEASE: Thud (2018)
+* MACHINE: qemux86-64
+* IMAGE SIZE: 5GB (can be manually configured)
+* KERNEL: 4.18.33
 
 If you want to change the image size, locate local.conf file from
 <code>cd build/conf</code> and edit the last line <code>IMAGE_ROOTFS_EXTRA_SPACE_append = " + 5000000"</code> where **5000000** is the size.   
