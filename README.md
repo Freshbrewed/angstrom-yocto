@@ -11,7 +11,7 @@ The objective is to combine all the working links, methods, tools and dependenci
 You may fiddle with local.conf file however you wish, or add extra layers to be used by bitbake but the defaults set in this repository results in a working image.
 Trial and error!
 
-##Build configuration
+## Build configuration
 * BB_VERSION = 1.40.0
 * BUILD_SYS = x86_64-linux
 * TARGET_SYS = x86_64-angstrom-linux
