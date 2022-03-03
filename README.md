@@ -1,4 +1,4 @@
-# Ångström-yocto-qemu
+# Ångström-Yocto-QEMU image
 
 Initialized Yocto project with all required dependencies to build a working Ångström Linux image successfully to be run using Yocto's "tool-set" QEMU. 
 You only have to clone this repository, run a baking command to create your own working Ångström image and start emulating it using provided QEMU.
@@ -35,6 +35,10 @@ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib buil
 ## Building
 This is the most time consuming operation which varies on the processing power of your processor. 
 A processor with 2 cores and 4 threads bitbakes a working Ångström image in around 6 hours.
+
+**BEWARE. You need AT LEAST 20GB of disk space.**
+Procedure takes lots of disk space since every single component has to be downloaded, extracted and baked inside the system image. 
+Once the procedure is over, you may free up space by deleting cache, backups and downloads inside the project.
 
 Make sure to source files inside angstrom-yocto folder:
 ```bash
