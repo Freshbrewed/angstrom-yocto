@@ -12,6 +12,7 @@ You may fiddle with local.conf file however you wish, or add extra layers to be 
 Trial and error!
 
 ## Build configuration
+* YOCTO_RELEASE = THUD
 * BB_VERSION = 1.40.0
 * BUILD_SYS = x86_64-linux
 * TARGET_SYS = x86_64-angstrom-linux
@@ -28,18 +29,23 @@ Trial and error!
 If you want to change the image size, locate local.conf file from
 <code>cd build/conf</code> and edit the last line <code>IMAGE_ROOTFS_EXTRA_SPACE_append = " + 5000000"</code> where **5000000** is the size.   
 
-## Ubuntu/Debian prerequisities
-```bash
-sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm
-```
-## Building
-This is the most time consuming operation which varies on the processing power of your processor. 
+## Preparation
+Building is the most time consuming operation which varies on the processing power of your processor. 
 A processor with 2 cores and 4 threads bitbakes a working Ångström image in around 6 hours.
 
 **BEWARE. You need AT LEAST 20GB of disk space.**
 Procedure takes lots of disk space since every single component has to be downloaded, extracted and baked inside the system image. 
 Once the procedure is over, you may free up space by deleting cache, backups and downloads inside the project.
 
+Ubuntu/Debian dependencies
+```bash
+sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm
+```
+Cloning the repository
+```bash
+git clone git://github.com/Freshbrewed/angstrom-yocto angstrom-yocto
+```
+## Building
 Make sure to source files inside angstrom-yocto folder:
 ```bash
 source oe-init-build-env
