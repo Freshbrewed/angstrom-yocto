@@ -54,4 +54,4 @@ Running QEMU inside Yocto-project
 ```bash
 runqemu qemux86-64
 ```
-
+The default password for the user is **root**. The image will have networking capabilities.
