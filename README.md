@@ -11,9 +11,17 @@ The objective is to combine all the working links, methods, tools and dependenci
 You may fiddle with local.conf file however you wish, or add extra layers to be used by bitbake but the defaults set in this repository results in a working image.
 Trial and error!
 
+##Build configuration
+* BB_VERSION = 1.40.0
+* BUILD_SYS = x86_64-linux
+* TARGET_SYS = x86_64-angstrom-linux
+* MACHINE = qemux86-64
+* DISTRO = angstrom
+* DISTRO_VERSION = v2018.12
+* TUNE_FEATURES = m64 core2
+
 ## Image specifications
-* YOCTO RELEASE: Thud (2018)
-* MACHINE: qemux86-64
+* DISTRO: Ångström Linux v2018.12
 * IMAGE SIZE: 5GB (can be manually configured)
 * KERNEL: 4.18.33
 
