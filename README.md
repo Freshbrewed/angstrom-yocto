@@ -28,7 +28,7 @@ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib buil
 This is the most time consuming operation which varies on the processing power of your processor. 
 A processor with 2 cores and 4 threads bitbakes a working Ångström image in around 6 hours.
 
-Make sure to source files inside ångström-yocto folder:
+Make sure to source files inside angstrom-yocto folder:
 ```bash
 source oe-init-build-env
 ```
@@ -40,7 +40,7 @@ In case you are in dire need of conserving some space, you can run a command to 
 ```bash
 bitbake core-image-minimal
 ```
-Bitbaked images reside in **ångström-yocto/build/tmp-glibc/deploy/images/~**
+Bitbaked images reside in **angstrom-yocto/build/tmp-glibc/deploy/images/~**
 ## Usage
 Running QEMU inside Yocto-project
 ```bash
