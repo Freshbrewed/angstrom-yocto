@@ -1,7 +1,7 @@
 # Ångström-Yocto-QEMU image
 
 Initialized Yocto project with all required dependencies to build a working Ångström Linux image successfully to be run using Yocto's "tool-set" QEMU. 
-You only have to clone this repository, run a baking command to create your own working Ångström image and start emulating it using provided QEMU.
+You only have to clone this repository, run a baking command to create your own Ångström image and start emulating it using provided QEMU.
 
 ## Purpose
 Official Ångström Linux distribution is no longer maintained and information regarding it is scattered all around. 
