@@ -27,7 +27,7 @@ Trial and error!
 * KERNEL: 4.18.33
 
 If you want to change the image size, locate local.conf file from
-<code>cd build/conf</code> and edit the last line <code>IMAGE_ROOTFS_EXTRA_SPACE_append = " + 5000000"</code> where **5000000** is the size.   
+<code>cd build/conf</code> and edit the last line <code>IMAGE_ROOTFS_EXTRA_SPACE_append = " + 5000000"</code> where **5000000** is the image size.   
 
 ## Preparation
 Building is the most time consuming operation which varies on the processing power of your processor. 
@@ -35,7 +35,7 @@ A processor with 2 cores and 4 threads bitbakes a working Ångström image in ar
 
 **BEWARE. You need AT LEAST 20GB of disk space.**
 Procedure takes lots of disk space since every single component has to be downloaded, extracted and baked inside the system image. 
-Once the procedure is over, you may free up space by deleting cache, backups and downloads inside the project.
+Once the procedure is over, you may free up space by deleting cache, backups and downloads inside the project, leaving you only with a system image.
 
 Ubuntu/Debian dependencies
 ```bash
