@@ -54,7 +54,7 @@ To start baking Ångström Linux distribution
 ```bash
 bitbake core-image-full-cmdline
 ```
-In case you are in dire need of conserving some space, you can run a command to build minimalist-version of the image
+In case you are in dire need of conserving some space, you can run a command to build a minimalist version of the system image.
 ```bash
 bitbake core-image-minimal
 ```
